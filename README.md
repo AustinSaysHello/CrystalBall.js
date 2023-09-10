@@ -1,3 +1,3 @@
-# :crystal_ball: CrystallBall.js
-
+# CrystallBall.js
+:crystal_ball: 
 ## Automating analytics for Composeable and Low-Code Web Applications
