@@ -2,11 +2,15 @@ var doGet = function(url) {
   axios.get(url)
     .then(function(response) {
       // handle success
-      return response;
+      console.log("success");
+      console.log(response);
+      return "success";
     })
     .catch(function(error) {
       // handle error
-      return error;
+      console.log("error");
+      console.log(error);
+      return "error";
     })
     .finally(function() {
       // always executed

@@ -12,7 +12,12 @@
 
 <body>
   <div x-data="{apiUrl: '', responseObj: 'placeholder' }">
-    <input x-model='apiUrl' placeholder="type url here"> <button x-on:click="responseObj = testFunction(apiUrl)"> submit </button>
+    <input x-model='apiUrl' placeholder="type url here"> <button
+      x-on:click="  axios.get(apiUrl)
+    .then(function(response) {
+      // handle success
+      responseObj = response.data.fact
+    })"> submit </button>
     <h1 x-text="responseObj"></h1>
   </div>
   <script src="script.js"></script>
