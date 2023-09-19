@@ -18,3 +18,11 @@
 
 * I decided to work with Alpine and Axios, managed to make a nice little wrapper to get them to work together
 * Got a nice little use out of a promise, but need to be careful about which x-data value I'm changing
+
+### Ideas
+
+* Most impoartant: what can I call, and what do I get when I call?
+  * API docs help here, and then the schema / types from the actual call
+  * Then also how to structure the call (endpoints, auth, ect.)
+* Other ideas
+  * Could make a low-fi digital ops center in Google Sheets or Airtabble
