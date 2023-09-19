@@ -2,6 +2,8 @@
 
 ## Sep 19, 2023
 
+### Before dev
+
 * Main idea browser based platform to test and monitor APIs one would normally use in an application made up of modular services (CMS, ecommerce, search, etc.)
 
 * Firstly, going to find a library for making JSON requests in the browser, here's what I've found so far
@@ -11,3 +13,8 @@
 * Think I'm gonna go with Axios for now just to get started
 
 * Secondly, long term I want this to be a little more structured than just a viewer for JSON viewing, something with a bit more strucutre, will write more about this later
+
+### After dev 
+
+* I decided to work with Alpine and Axios, managed to make a nice little wrapper to get them to work together
+* Got a nice little use out of a promise, but need to be careful about which x-data value I'm changing
