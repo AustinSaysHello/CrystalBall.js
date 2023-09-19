@@ -7,9 +7,14 @@
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
+  <div x-data="{apiUrl: '', responseObj: 'placeholder' }">
+    <input x-model='apiUrl' placeholder="type url here"> <button x-on:click="console.log('test')"> submit </button>
+    <h1> Response </h1>
+  </div>
   <script src="script.js"></script>
   <!-- This script places a badge on your repl's full-browser view back to your repl's cover page.-->
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>

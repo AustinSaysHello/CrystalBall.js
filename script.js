@@ -1,5 +1,3 @@
-//console.log("Hello, world!")
-
 axios.get("https://catfact.ninja/fact")
   .then(function (response) {
     // handle success
