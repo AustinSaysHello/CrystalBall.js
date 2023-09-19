@@ -1,12 +1,18 @@
-axios.get("https://catfact.ninja/fact")
-  .then(function (response) {
-    // handle success
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  });
+var doGet = function(url) {
+  axios.get(url)
+    .then(function(response) {
+      // handle success
+      return response;
+    })
+    .catch(function(error) {
+      // handle error
+      return error;
+    })
+    .finally(function() {
+      // always executed
+    });
+}
+
+var testFunction = function(str) {
+  return str;
+}

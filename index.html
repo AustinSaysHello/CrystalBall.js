@@ -12,8 +12,8 @@
 
 <body>
   <div x-data="{apiUrl: '', responseObj: 'placeholder' }">
-    <input x-model='apiUrl' placeholder="type url here"> <button x-on:click="console.log('test')"> submit </button>
-    <h1> Response </h1>
+    <input x-model='apiUrl' placeholder="type url here"> <button x-on:click="responseObj = testFunction(apiUrl)"> submit </button>
+    <h1 x-text="responseObj"></h1>
   </div>
   <script src="script.js"></script>
   <!-- This script places a badge on your repl's full-browser view back to your repl's cover page.-->
