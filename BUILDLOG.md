@@ -26,3 +26,12 @@
   * Then also how to structure the call (endpoints, auth, ect.)
 * Other ideas
   * Could make a low-fi digital ops center in Google Sheets or Airtabble
+
+## Sep 22, 2023
+
+### Before Dev
+
+* Past few days I've been working on a blog post about why's a good time to launch your own software
+* Finished that, and reached out to a few other bloggers who put out Jamstack content so I can talk to them about my idea, will see if they reply
+* Wanted to work on the code a little bit to keep the momentum going
+* In the theme of API observability, I think something that reads the docs and breaks down the schema of the response would be good to work on next, going to start with that.
