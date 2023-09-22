@@ -35,3 +35,10 @@
 * Finished that, and reached out to a few other bloggers who put out Jamstack content so I can talk to them about my idea, will see if they reply
 * Wanted to work on the code a little bit to keep the momentum going
 * In the theme of API observability, I think something that reads the docs and breaks down the schema of the response would be good to work on next, going to start with that.
+
+### After Dev
+
+* Looks like if an API is built with OpenAPI specifications you can get the docs in json format, similar to this: https://catfact.ninja/docs/api-docs.json
+* This is actually insanely useful, could store all docs in one place or at least the links, could store doc versions and track changes over time
+* Since the documentation endpoint returns JSON, the code used to parse the json of the data responses could also be used for the documentation, 2 for one right there.
+* Lots of APIs don't use the OpenAPI specification, but if they are adherenent to REST getting around from the entry point should be all you need, will have to test and see
