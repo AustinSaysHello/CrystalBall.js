@@ -1,3 +1,4 @@
+var testObj = "";
 var doGet = function(url) {
   axios.get(url)
     .then(function(response) {
@@ -17,48 +18,52 @@ var doGet = function(url) {
     });
 }
 
-var doGetPromise = function(url){
+var doGetPromise = function(url) {
   var myResponse = "";
-  return new Promise(function (resolve,reject) {
+  return new Promise(function(resolve, reject) {
     axios.get(url)
-    .then(function(response) {
-      myResponse = response
-    })
-    .catch(function(error) {
-      myResponse = error
-    })
-    if(myResponse != ""){
+      .then(function(response) {
+        myResponse = response
+      })
+      .catch(function(error) {
+        myResponse = error
+      })
+    if (myResponse != "") {
       resolve(myResponse);
     }
-    else{
+    else {
       reject("it didn't work");
     }
   })
 }
 
-var doGetPromise2 = function (url){
-  return new Promise (function (resolve, reject) {
+var doGetPromise2 = function(url) {
+  return new Promise(function(resolve, reject) {
     /// code
-    if( url != ""){
+    if (url != "") {
       resolve(url)
     }
-    else{
+    else {
       reject("invalid url")
     }
   })
 }
 
-var doGetPromise3 = function (url){
-  return new Promise (function (resolve, reject) {
+var doGetPromise3 = function(url) {
+  return new Promise(function(resolve, reject) {
     /// code
     axios.get(url)
-    .then(function(response) {
-      // handle success
-      resolve(response)
-    })
-    .catch(function(error) {
-      // handle error
-      reject(error)
-    })
+      .then(function(response) {
+        // handle success
+        testObj = response;
+        console.log(testObj);
+        resolve(response)
+      })
+      .catch(function(error) {
+        // handle error
+        reject(error)
+      })
   })
 }
+
+// have been using this url to test: https://catfact.ninja/fact

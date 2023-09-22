@@ -11,10 +11,15 @@
 </head>
 
 <body>
-  <div x-data="{apiUrl: '', responseObj: 'placeholder' }">
+  <div x-data="{apiUrl: '', responseObj: 'placeholder', obj_keys: ''}">
     <input x-model='apiUrl' placeholder="type url here"> <button
-      x-on:click="doGetPromise3(apiUrl).then(function(value){responseObj= value.data.fact})"> submit </button>
+      x-on:click="doGetPromise3(apiUrl).then(function(value){responseObj= value.data;obj_keys=Object.keys(value.data)})"> submit </button>
     <h1 x-text="responseObj"></h1>
+    <ul>
+      <template x-for="item in obj_keys":key="item">
+        <li x-text="item"></li>
+      </template>
+    </ul>
   </div>
   <script src="script.js"></script>
   <!-- This script places a badge on your repl's full-browser view back to your repl's cover page.-->
