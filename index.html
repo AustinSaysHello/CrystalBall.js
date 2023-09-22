@@ -11,12 +11,22 @@
 </head>
 
 <body>
-  <div x-data="{apiUrl: '', responseObj: 'placeholder', obj_keys: ''}">
-    <input x-model='apiUrl' placeholder="type url here"> <button
-      x-on:click="doGetPromise3(apiUrl).then(function(value){responseObj= value.data;obj_keys=Object.keys(value.data)})"> submit </button>
+  <div x-data="{apiUrl: '', 
+              responseObj: 
+              'placeholder',
+              obj_keys: ''}">
+
+    <input x-model='apiUrl' placeholder="type url here">
+
+    <button x-on:click="doGetPromise(apiUrl)
+      .then(function(value){
+        responseObj = value.data;
+        obj_keys=Object.keys(value.data)})"> submit </button>
+
     <h1 x-text="responseObj"></h1>
+
     <ul>
-      <template x-for="item in obj_keys":key="item">
+      <template x-for="item in obj_keys" :key="item">
         <li x-text="item"></li>
       </template>
     </ul>
