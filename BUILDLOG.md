@@ -42,3 +42,10 @@
 * This is actually insanely useful, could store all docs in one place or at least the links, could store doc versions and track changes over time
 * Since the documentation endpoint returns JSON, the code used to parse the json of the data responses could also be used for the documentation, 2 for one right there.
 * Lots of APIs don't use the OpenAPI specification, but if they are adherenent to REST getting around from the entry point should be all you need, will have to test and see
+
+## Sep 23, 2023
+
+### Ideas
+
+* For this project, I want to focus first on the subset of API functionality that actually serves content. That's the bare minimum functionality that has to be used if someones is making a composeable app with a cms or ecommerce tool, so it would be a good place to start. The management functionality can come next.
+* Also go the idea to automatically add analytics code via middleware or edge functions, will keep that in the back of my mind for now. 
