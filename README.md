@@ -8,3 +8,4 @@ Some insportation for my project:
 * https://axiom.co
 * https://hoppscotch.io
 * https://posthog.com
+* https://www.checklyhq.com
