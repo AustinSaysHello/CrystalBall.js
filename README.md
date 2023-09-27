@@ -9,3 +9,4 @@ Some insportation for my project:
 * https://hoppscotch.io
 * https://posthog.com
 * https://www.checklyhq.com
+* https://www.honeycomb.io
