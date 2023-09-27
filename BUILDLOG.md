@@ -60,7 +60,9 @@
   * Airtable (they have a great API, they already have a query builder but that's not the point) *
   * Twitter
   * Stripe
-  * Contentful (is free for 1 user) *
+  * Contentful (is free for 1 user) 
   * Builder.io (has a great free tier)
   * Snipcart (has a great free tier)
   * Storyblok (has a great free tier)
+  * CommerceJs
+* Another idea, could be used for exploring APIs for data science projects, and staging to landing zones
