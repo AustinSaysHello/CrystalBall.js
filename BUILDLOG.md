@@ -66,3 +66,9 @@
   * Storyblok (has a great free tier)
   * CommerceJs (has a great free tier)
 * Another idea, could be used for exploring APIs for data science projects, and staging to landing zones
+
+### After Dev
+
+* Was able to set up tests with contently and commercejs, made me realize a bit more about how SSGs work
+* Naturally if you're building a static site, the API data is pulled in when the build starts on the static pages, not on the front end ( would be a good place to add analytics)
+* Having all of the management APIs avaible in one place actually seems pretty useful, then could create pipes to them from outside APIs, the fetch API seems pretty good too. S

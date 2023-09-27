@@ -50,5 +50,5 @@ axios.get(apiUrl2, {
     "X-Authorization": accessToken2
   }
 }).then(function(response){
-  console.log(response)
+  console.log(response.data)
 });
