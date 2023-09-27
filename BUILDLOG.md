@@ -42,3 +42,18 @@
 * This is actually insanely useful, could store all docs in one place or at least the links, could store doc versions and track changes over time
 * Since the documentation endpoint returns JSON, the code used to parse the json of the data responses could also be used for the documentation, 2 for one right there.
 * Lots of APIs don't use the OpenAPI specification, but if they are adherenent to REST getting around from the entry point should be all you need, will have to test and see
+
+## Spetmeber 27, 2023
+
+### Before Dev
+
+* Tried setting up some self hosted solutions to test my library on, but was running into issues with Google Cloud run and docker, thing I'll just host them locally and expose them to the internet with ngrok, that way my projects on here can access them
+* I kind of don't want to do that right now though, I'll probably just try some free services to test it with in the mean time
+* Could try a number of sources like:
+  * Airtable (they have a great API, they already have a query builder but that's not the point) *
+  * Twitter
+  * Stripe
+  * Contentful (is free for 1 user) *
+  * Builder.io (has a great free tier)
+  * Snipcart (has a great free tier)
+  * Storyblok (has a great free tier)
