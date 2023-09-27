@@ -64,5 +64,5 @@
   * Builder.io (has a great free tier)
   * Snipcart (has a great free tier)
   * Storyblok (has a great free tier)
-  * CommerceJs
+  * CommerceJs (has a great free tier)
 * Another idea, could be used for exploring APIs for data science projects, and staging to landing zones
