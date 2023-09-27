@@ -39,3 +39,16 @@ axios.get(apiUrl).then(function (response) {
   console.log(contentObj.data.items)
 });
 
+// trying the snipcart API next
+// nevermind, makes you add product in code, which is good if you already have 
+// a cms, going to try commercejs insteadS
+
+var apiUrl2 = "https://api.chec.io/v1/products/"
+
+axios.get(apiUrl2, {
+  headers: {
+    "X-Authorization": accessToken2
+  }
+}).then(function(response){
+  console.log(response)
+});
